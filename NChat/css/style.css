@@ -1,0 +1,72 @@
+#mini-chat {
+  width: 60px;
+  height: 60px;
+  background: #427200;
+  padding: 10px;
+  border-radius: 50%;
+  position: fixed;
+  bottom: 20px;
+  right: 30px;
+  cursor: pointer;
+}
+
+#mini-chat svg {
+  fill: #fff;
+}
+
+#chat {
+  z-index: 90;
+  position: fixed;
+  bottom: 20px;
+  right: 30px;
+  width: 320px;
+  border: 1px solid #ccc;
+  border-radius: 5px 5px 0 0;
+}
+
+#chat.active {
+  display: none;
+}
+
+#chat .header-top {
+  padding: 10px;
+  border-radius: 5px 5px 0 0;
+  background: #427200;
+  color: #fff;
+}
+
+#chat .header-top .chat-close {
+  cursor: pointer;
+}
+
+#chat .main {
+  height: 200px;
+  background-color: #fff;
+}
+
+#chat .main .message {
+  margin: 15px;
+  padding: 10px;
+  border-radius: 5px;
+  width: 51%;
+  position: relative;
+}
+
+#chat .main .message .time {
+  position: absolute;
+  top: 100%;
+  right: 10px;
+  color: #888;
+}
+
+#chat .main .message.user {
+  background: #427200;
+  float: right;
+  color: #fff;
+}
+
+#chat .main .message.admin {
+  background: #ccc;
+  float: left;
+}
+/*# sourceMappingURL=style.css.map */
